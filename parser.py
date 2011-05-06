@@ -6,7 +6,10 @@ import feedparser
 PERMITTED_FIELDS = ["title", "summary", "link"]
 Job = namedtuple('Job', " ".join(PERMITTED_FIELDS))
 
-FEEDS = ["http://www.zonajobs.com.ar/empleos/Java?format=rss"]
+FEEDS = ["http://www.zonajobs.com.ar/empleos/Python?format=rss",
+	 "http://www.zonajobs.com.ar/empleos/Machine+Learning?format=rss",
+	 "http://www.zonajobs.com.ar/empleos/Secretaria?format=rss"
+]
 
 class Parser(object):
     """
